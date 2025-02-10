@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+      <style>
+
+        /* as tags podem receber css de forma individualmente p */
+        p{
+            /*  color representa a cor da fonte */
+            color: green;
+        }  
+          /* a classe é representada por um . antes do nome */
+          /*  a classe sobrepoem os estilos dos seletores genericos */
+         .vermelho{
+            color: red;
+         }
+         .azul{
+            color: blue;
+         }
+         .bgciano{
+            /*  backgroud é um atributo com mais configurações sendo aqui trocano apenas */
+            /*  a cor de fundo */
+            background: cyan;
+         }
+         /*  o id sobrepom a classe */
+         #roxo{
+
+            color: purple;
+         }
+         h1,h1{
+            color: blueviolet;
+         }
+
+      </style>
+
+</head>
+<body>
+    <h1>Classes css</h1>
+    <h2>Veja exemplos abaixo </h2>
+
+    <p>Olá mundo</p>
+    <p>Olá mundo</p>
+    <p class="vermelho">Eu sou Vermelho</p>
+    <p class="azul">Eu sou azul</p>
+    <p class="bgciano">Eu tenho background ciano</p>
+    <p class="azul" id="roxo"> Atenção </p>
+       <!-- css incline sobrepoem as classes e ids -->
+    <p id="roxo" class="bgciano" style="color: brown; background: pink;">Todo mundo</p>
+         <!-- podemos aplicar varias classes separando as classes -->
+</body>
+</html>
