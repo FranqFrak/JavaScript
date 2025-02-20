@@ -8,7 +8,7 @@
 <body>
     <script>
         function mostrarNome(){
-            console.log('Homer');
+            console.log('Homer Simpsons');
         }
         mostrarNome();
 
@@ -22,6 +22,28 @@
              console.log('2025')     
               }
               mostrarAno();
+
+              var soma = (a, b) =>{
+                    return a + b;
+              }
+
+              var resultado = soma (15,5);
+
+              console.log(resultado);
+
+              var pessoa = {
+                 nome : 'Homer',
+                 idade : 18
+              }
+
+              var mudaNome = (obejetoPessoa)=>{
+                obejetoPessoa.nome = 'lucas',
+                obejetoPessoa.municipio = 'serra'
+              }
+
+              mudaNome(pessoa);
+
+              console.log(pessoa);
     </script>
 </body>
 </html>
